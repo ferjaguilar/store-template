@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Avon Store</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#">Inicio</a>
+          <a class="nav-link active" href="#">Crear cuenta</a>
+          <a class="nav-link" href="#">Iniciar Sesion</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-4 mb-5">
+    <div class="card mx-auto" style="width: 25rem;">
+      <div class="card-body">
+       <h3 class="text-style text-center my-4">Crear nueva cuenta</h3>
+
+       <form action="">
+        <div class="form-group">
+          <input type="text" class="form-control" id="num_dui" placeholder="Ingresa numero de DUI">
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="fullname" placeholder="Ingresa nombre completo">
+        </div>
+
+        <div class="form-group">
+          <input type="email" class="form-control" id="fullname" placeholder="Ingresa E-mail">
+        </div>
+
+        <div class="form-group">
+          <input type="password" class="form-control" id="fullname" placeholder="Ingresa tu clave">
+        </div>
+
+        <div class="form-group">
+          <select class="form-control" id="municipality">
+            <option>--CREAR CONSULTA PARA IMPRIMIR MUNICIPIOS</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <textarea class="form-control" id="address" rows="3" placeholder="Ingresa tu direccion"></textarea>
+        </div>
+
+        <div class="form-group">
+          <select class="form-control" id="state">
+            <option>--CREAR CONSULTA PARA IMPRIMIR ESTADO</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block">Crear Cuenta</button>
+        </div>
+       </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
