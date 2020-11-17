@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Windows</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+  
+  <main class="container mt-5">
+    <div class="card" style="width: 18rem;">
+      <img 
+        src="https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/8a94ac52-03f3-4b72-9172-fa0cede5157d/calzado-blazer-mid-77-vintage-3219Cm.jpg" 
+        class="card-img-top" 
+        alt="Zapatos"
+        data-toggle="modal"
+        data-target="#productModal"
+        aria-hidden="true"
+      >
+      <div class="card-body">
+        <h5 class="card-title">Titulo</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+    </div>
+  </main>
+
+
+  <!--Modal Window-->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h3>Detalle del producto!</h3>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Nombre de producto: </li>
+            <li class="list-group-item">Precio: </li>
+            <li class="list-group-item">Descripcion: </li>
+          </ul>
+        
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">OK!</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
